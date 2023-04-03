@@ -1,0 +1,30 @@
+@baseURL=http://localhost:3000
+
+@host=http://localhost:3000
+
+#################
+##User###########
+#################
+
+### Signin 
+POST {{baseURL}}/signin 
+Content-Type: application/json
+
+{
+    "email" : "test2@mail.com",
+    "password" : "123"
+}
+
+
+### LOGIN 
+POST {{baseURL}}/login
+Content-Type: application/json
+
+{
+    "email" : "test2@mail.com",
+    "password" : "123"
+}
+
+### Signout 
+GET {{baseURL}}/signout 
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzZmRkODdhZmFiOWE0ODA2ODVmNTAzMiIsImVtYWlsIjoidGVzdDJAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMiRZYVVnQXNseGp3MjRyQ2R6QmdxaWl1N2dLNVU5Vk9CUFQ3eU5MWjJaaVJUeGgyVWNKOE83ZSIsIl9fdiI6MH0sImlhdCI6MTY3NzU4MTc2OCwiZXhwIjoxNjc3NTg1MzY4fQ.y8oQDp7Zu0xpVbpY7VmlbTz9AJ-pv46FLNbIWv5yJrc
